@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+* {
+  box-sizing: border-box;
+}
+
+.modalBackground {
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContainer {
+    width: 500px;
+    height: 500px;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    top: 60%;
+    position: absolute;
+  }
+
+  .window-modalContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modalContainer .title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  .titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .modalContainer form {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 5px;
+
+  }
+
+  .modalContainer .input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+
+  .modalContainer input[type=text], input[type=email], input[type=password] {
+    font-family: 'Fira Sans', sans-serif;
+    height: 45px;
+    font-size: 16px;
+    width: 100%;
+    -webkit-appearance: none;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    /* border-radius: 2px; */
+    /*padding: 0 8px;*/
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px 20px;
+    margin: 8x 0;
+    margin-bottom: 5px;
+    text-align: left;
+
+  }
+
+  .modalContainer .icon {
+    padding: 13px;
+    background: #000000;
+    color: white;
+    min-width: 45px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .modalContainer.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .modalContainer.input-field:focus {
+    border: 2px solid dodgerblue;
+  }
+
+  .modalContainer .modal-footer .btn {
+    width: 200px;
+    height: 45px;
+    margin: 10px;
+    border: none;
+    background-color: #ff6600;
+    color: white;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: auto;
+  }
