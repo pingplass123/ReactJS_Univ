@@ -17,7 +17,7 @@ class TestCategory extends React.Component {
 
   componentDidMount() {
       Promise.all([
-          fetch("https://univelear.herokuapp.com/api/catagory"),
+          fetch("https://univelear.herokuapp.com/api/category"),
           fetch("https://univelear.herokuapp.com/api/subcategory")
       ])
       .then(([res1, res2]) => Promise.all([res1.json(), res2.json()]))
